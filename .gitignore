@@ -1,0 +1,16 @@
+main.pdf
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.lua
+*.in
+*.out
+*.toc
+_markdown_main/*
+
+*.synctex(busy)
+test.tex

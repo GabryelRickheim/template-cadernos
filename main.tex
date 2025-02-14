@@ -1,0 +1,47 @@
+\documentclass[12pt,a4paper,brazil,transparencia]{bbe}
+\usepackage{pdfpages}
+\usepackage[definitionLists,hashEnumerators,smartEllipses,hybrid]{markdown}
+\usepackage[portuguese]{babel}
+\usepackage{blindtext}
+\usepackage[all]{nowidow}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\usepackage{pifont}
+\usepackage{xcolor}
+\usepackage{indentfirst}
+\usepackage{xurl}
+\usepackage[bottom]{footmisc}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\titlelabel{\thetitle.\quad}
+\justifying
+
+\markdownSetup{renderers={
+  link = {\href{#2}{#1}}
+}}
+
+\begin{document}
+\emergencystretch 3em % Evita que o texto ultrapasse a margem
+
+\selectlanguage{brazil}
+\frenchspacing
+
+\includepdf[pages={1,2}]{pretextuais/capa.pdf}
+
+\renewcommand{\contentsname}{Sumário}
+\setcounter{tocdepth}{2}
+{
+  \hypersetup{linkcolor=black}
+  \tableofcontents
+}
+
+\renewcommand{\chaptername}{Módulo}
+\renewcommand{\tablename}{Quadro}
+%\blinddocument
+
+% Inclua os módulos aqui
+% Para cada módulo, crie um com o nome chapterXX.tex, onde XX é o número do módulo
+% \input{chapter01}
+\input{exemplo}
+
+\end{document}

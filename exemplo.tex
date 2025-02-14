@@ -1,0 +1,160 @@
+\chapter{Título Exemplo} % Título por extenso do capitulo
+
+Texto normal: \\
+
+\textbf{Texto negrito:} \\
+
+\textit{Texto itálico:} \\
+
+% É Possivel combinar tags
+\textbf{\textit{Texto negrito e itálico:}} \\
+
+\texttt{Texto em fonte monoespaçada:} \\
+
+\underline{Texto sublinhado:} \\
+
+% Exemplo de caixa personalizada com título
+\begin{samepage}
+    \begin{flushleft}
+        \includegraphics[height=24px]{icons/bullet_video.png}
+    \end{flushleft}
+    \vspace{-\baselineskip-4px}
+    \begin{titlebox}{Exemplo de caixa com título\ldots}
+        Caixa com título, geralmente usada para apresentação de arquivos multimídia ao leitor, como vídeos, áudios e imagens.
+
+        \href{https://cdn.evg.gov.br/cursos/1332_EVG/videos/Trailer.mp4}{Dê o play agora mesmo!}
+    \end{titlebox}
+\end{samepage}
+
+% Exemplo de nota destacada
+\begin{note}
+    Exemplo de nota, geralmente usada para destacar informações importantes ao leitor. Turibus sedis volo tet faceatin rat voluptat aut quam experiost, cullendi doleseq uaecullandae ea preprae num liquostium fugiae ape reria dit que pe incimi, sunt, omnit re eossentium invelitiis exerchi ligenitiis sitate ad quisseq uaspedi acerupta elique lacid magnis audant estrum quunt quodi comnisint optatibeatem ilit des seni iniscil experit aut eossint, simet pre ped eniati dolla
+\end{note}
+
+\newpage % Cria uma nova página
+
+% exemplo de nota com icone de importante
+\begin{samepage}
+    \begin{flushleft}
+        \includegraphics[height=24px]{icons/bullet_importante.png}
+    \end{flushleft}
+    \vspace{-\baselineskip}
+    \begin{note}
+        Exemplo de nota com icone de importante. Turibus sedis volo tet faceatin rat voluptat aut quam experiost, cullendi doleseq uaecullandae ea preprae num liquostium fugiae ape reria dit que pe incimi, sunt, omnit re eossentium invelitiis exerchi ligenitiis sitate ad quisseq uaspedi acerupta elique lacid magnis audant estrum quunt quodi comnisint optatibeatem ilit des seni iniscil experit aut eossint, simet pre ped eniati dolla
+    \end{note}
+\end{samepage}
+
+% Exemplo de imagem
+% Ao inserir uma imagem, certifique-se que o texto da seção anterior terminou com \\
+% caso o elemento anterior seja algo não textual, como uma tabela ou imagem, utilize \bigskip ao invés de \\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/exemplo.png}
+    \caption{Figura de Exemplo}
+    %\label{fig:exemplo2}
+\end{figure}
+
+Lista ordenada:
+
+% Exemplo de lista ordenada
+\begin{enumerate}
+    \item Item 1
+    \item Item 2
+          \begin{enumerate}
+              \item Item 1
+              \item Item 2
+              \item Item 3
+          \end{enumerate}
+    \item Item 3
+\end{enumerate}
+
+Lista não ordenada:
+
+% Exemplo de lista não ordenada
+\begin{itemize}
+    \item Item 1
+    \item Item 2
+    \item Item 3
+    \item Item 1
+    \item Item 2
+    \item Item 3
+    \item Item 1
+    \item Item 2
+    \item Item 3
+\end{itemize}
+
+Lista aninhada:
+
+% Exemplo de lista aninhada
+\begin{itemize}
+    \item Item 1
+    \item Item 2
+          \begin{itemize}
+              \item Subitem 1
+              \item Subitem 2
+                    \begin{itemize}
+                        \item Subsubitem 1
+                        \item Subsubitem 2
+                              \begin{itemize}
+                                  \item Subsubsubitem 1
+                                  \item Subsubsubitem 2
+                              \end{itemize}
+                    \end{itemize}
+          \end{itemize}
+    \item Item 3
+\end{itemize}
+
+% Exemplo de citação
+\begin{quotebox}
+    Exemplo de citação. Pis es ex et unt quis ma qui cusa dolorpor molorenducid que vent litiuntiis rem faceaque numquat ionsequo moluptas alicat opta quodi rest ea ditibus anienet, sitatur assum apiciat isciaepelit in et, non con eum et.
+\end{quotebox}
+
+% Exemplo de lei
+% importante, incluir vspace
+\vspace{12px}
+\begin{lawbox}
+    Art. 1º Erum veliqui corepud issinct atiaecat reiusam ipisciistiis sequam ius most, experum fugiti veni utem qui deni inum et laccatur repelis acerci iustem ant pore, volecto tatius, alignih illanitat hit et re nossuntiatur atem si dolor rerchil molore qui re, si occaborecus verae.
+\end{lawbox}
+
+Exemplo de tabela:
+
+% Exemplo de tabela
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|p{5cm}|p{10cm}|}
+        \hline
+        \rowcolor[HTML]{E1E4E5}
+        \textbf{Nº} & \textbf{Termo}              & \textbf{Definição / Significado}                                                                                                               \\ \hline
+        1           & empresa estatal             & entidade dotada de personalidade jurídica de direito privado, cuja maioria do capital votante pertença direta ou indiretamente à União.        \\ \hline
+        2           & empresa pública             & empresa estatal cuja maioria do capital votante pertença diretamente à União e cujo capital social seja constituído de recursos públicos.      \\ \hline
+        3           & sociedade de economia mista & empresa estatal cuja maioria das ações com direito a voto pertença diretamente à União e cujo capital social admite participação privada.      \\ \hline
+        4           & subsidiária                 & empresa estatal cuja maioria das ações com direito a voto pertença direta ou indiretamente a empresa pública ou a sociedade de economia mista. \\ \hline
+    \end{tabular}
+    \caption{Glossário de termos}
+    %\label{tab:glossario}
+\end{table}
+\bigskip %usar apenas quando for o ultimo elemento da seção
+
+% Ao declarar seções, subseções e subsubseções, lembre-se de adicionar \\ 
+% ao final do texto da seção anterior
+% ATENÇÃO: Caso o ultimo elemento da seção seja um elemento não textual, 
+% como uma tabela ou imagem ou outro comando latex, utilize \bigskip ao invés de \\
+\section{Seção Exemplo 1}
+
+Exemplo de seção. \\
+
+\subsection{Subseção Exemplo 1}
+
+Exemplo de subseção. \\
+
+\subsection{Subseção Exemplo 2}
+
+Exemplo de subseção. \\
+
+\subsubsection{Subsubseção Exemplo 1}
+
+Exemplo de subsubseção. \\
+
+\section{Seção Exemplo 2}
+
+Exemplo de seção.
