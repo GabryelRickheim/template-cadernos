@@ -13,12 +13,29 @@
 \usepackage[bottom]{footmisc}
 \usepackage{ragged2e}
 \usepackage{titlesec}
+\usepackage[pages=some]{background}
 \titlelabel{\thetitle.\quad}
 \justifying
 
 \markdownSetup{renderers={
   link = {\href{#2}{#1}}
 }}
+\backgroundsetup{
+scale=1,
+color=black,
+opacity=1,
+angle=0,
+contents={%
+  \includegraphics[width=\paperwidth,height=\paperheight]{images/capa_caderno de cursos.png}
+  }%
+}
+\geometry{%
+	left=2.5cm,%
+	right=2.5cm,%
+	top=4cm,%
+	bottom=2.5cm,%
+	bindingoffset=0cm
+}
 
 \begin{document}
 \emergencystretch 3em % Evita que o texto ultrapasse a margem
@@ -26,7 +43,7 @@
 \selectlanguage{brazil}
 \frenchspacing
 
-\includepdf[pages={1,2}]{pretextuais/capa.pdf}
+\input{capa}
 
 \renewcommand{\contentsname}{Sumário}
 \setcounter{tocdepth}{2}
