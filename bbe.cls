@@ -3,6 +3,13 @@
 \LoadClassWithOptions{book}
 % geometry
 \RequirePackage{geometry}
+\geometry{%
+	left=2.5cm,%
+	right=2.5cm,%
+	top=4cm,%
+	bottom=2.5cm,%
+	bindingoffset=0cm
+}
 % math font
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
