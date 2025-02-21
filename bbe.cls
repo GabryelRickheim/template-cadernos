@@ -37,17 +37,31 @@
     \definecolor{corFundo}{HTML}{E1E4E5} % Cor de Fundo
     \colorlet{bbe}{corSecundaria}
 }
-\DeclareOption{gestaoPublica}{
-    \definecolor{corPrincipal}{HTML}{064E8B} % Cor Principal
-    \definecolor{corSecundaria}{HTML}{4E98D9} % Cor Secundária
-    \definecolor{corAlternativa}{HTML}{8C7301} % Cor Alternativa
+\DeclareOption{lideranca}{
+    \definecolor{corPrincipal}{HTML}{E74857} % Cor Principal
+    \definecolor{corSecundaria}{HTML}{E87B54} % Cor Secundária
+    \definecolor{corAlternativa}{HTML}{B53845} % Cor Alternativa
     \definecolor{corFundo}{HTML}{E1E4E5} % Cor de Fundo
     \colorlet{bbe}{corSecundaria}
 }
-\DeclareOption{transparencia}{
-    \definecolor{corPrincipal}{HTML}{02695C} % Cor Principal
-    \definecolor{corSecundaria}{HTML}{04B59D} % Cor Secundária
-    \definecolor{corAlternativa}{HTML}{044875} % Cor Alternativa
+\DeclareOption{estrategiaPlanejamento}{
+    \definecolor{corPrincipal}{HTML}{EC6C5B} % Cor Principal
+    \definecolor{corSecundaria}{HTML}{1FA161} % Cor Secundária
+    \definecolor{corAlternativa}{HTML}{AD5044} % Cor Alternativa
+    \definecolor{corFundo}{HTML}{E1E4E5} % Cor de Fundo
+    \colorlet{bbe}{corSecundaria}
+}
+\DeclareOption{gestaoInformacaoConhecimento}{
+    \definecolor{corPrincipal}{HTML}{CF4616} % Cor Principal
+    \definecolor{corSecundaria}{HTML}{E84F82} % Cor Secundária
+    \definecolor{corAlternativa}{HTML}{69434F} % Cor Alternativa
+    \definecolor{corFundo}{HTML}{E1E4E5} % Cor de Fundo
+    \colorlet{bbe}{corSecundaria}
+}
+\DeclareOption{desenvolvimentoPessoal}{
+    \definecolor{corPrincipal}{HTML}{DD9617} % Cor Principal
+    \definecolor{corSecundaria}{HTML}{DD9E85} % Cor Secundária
+    \definecolor{corAlternativa}{HTML}{383838} % Cor Alternativa
     \definecolor{corFundo}{HTML}{E1E4E5} % Cor de Fundo
     \colorlet{bbe}{corSecundaria}
 }
