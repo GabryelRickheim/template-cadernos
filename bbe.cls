@@ -45,8 +45,8 @@
     \colorlet{bbe}{corSecundaria}
 }
 \DeclareOption{estrategiaPlanejamento}{
-    \definecolor{corPrincipal}{HTML}{EC6C5B} % Cor Principal
-    \definecolor{corSecundaria}{HTML}{1FA161} % Cor Secundária
+    \definecolor{corPrincipal}{HTML}{1FA161} % Cor Principal
+    \definecolor{corSecundaria}{HTML}{EC6C5B} % Cor Secundária
     \definecolor{corAlternativa}{HTML}{AD5044} % Cor Alternativa
     \definecolor{corFundo}{HTML}{E1E4E5} % Cor de Fundo
     \colorlet{bbe}{corSecundaria}
