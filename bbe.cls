@@ -22,10 +22,10 @@
 \RequirePackage[dvipsnames]{xcolor}
 
 %Cores para Eixo de Comunicação
-\definecolor{corPrincipal}{HTML}{FFFFFF} % Cor Principal
-\definecolor{corSecundaria}{HTML}{FFFFFF} % Cor Secundária
-\definecolor{corAlternativa}{HTML}{FFFFFF} % Cor Alternativa
-\definecolor{corFundo}{HTML}{FFFFFF} % Cor de Fundo
+\definecolor{corPrincipal}{HTML}{000000} % Cor Principal
+\definecolor{corSecundaria}{HTML}{000000} % Cor Secundária
+\definecolor{corAlternativa}{HTML}{000000} % Cor Alternativa
+\definecolor{corFundo}{HTML}{000000} % Cor de Fundo
 
 \RequirePackage[table]{xcolor}
 
@@ -52,8 +52,8 @@
     \colorlet{bbe}{corSecundaria}
 }
 \DeclareOption{gestaoInformacaoConhecimento}{
-    \definecolor{corPrincipal}{HTML}{CF4616} % Cor Principal
-    \definecolor{corSecundaria}{HTML}{E84F82} % Cor Secundária
+    \definecolor{corPrincipal}{HTML}{E84F82} % Cor Principal
+    \definecolor{corSecundaria}{HTML}{CF4616} % Cor Secundária
     \definecolor{corAlternativa}{HTML}{69434F} % Cor Alternativa
     \definecolor{corFundo}{HTML}{E1E4E5} % Cor de Fundo
     \colorlet{bbe}{corSecundaria}
