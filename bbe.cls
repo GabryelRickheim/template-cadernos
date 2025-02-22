@@ -668,8 +668,8 @@
 \raggedbottom
 
 % Textos de rodapé e cabeçalho
-\def\preparelabel{Enap}
-\def\preparename{Fundação Escola Nacional de Administração Pública}
+\def\preparelabel{\siglaorgao}
+\def\preparename{\nomeorgao}
 \let\ps@origin\ps@plain
 \def\ps@plain{%
 	\let\@oddhead\@empty%
