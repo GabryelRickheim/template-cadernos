@@ -16,10 +16,10 @@ Para executar o projeto num editor dedicado, siga as instruções no tutorial do
 
 [MikTeX](https://miktex.org/download)\
 [Perl](https://strawberryperl.com/)\
-[Docker Desktop](https://www.docker.com/products/docker-desktop/)\
+[Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
 ### Extensões no VSCode:
 
 LaTeX\
 LaTeX Workshop\
-LaTeX Utilities\
+LaTeX Utilities
