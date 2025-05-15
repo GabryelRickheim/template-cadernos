@@ -65,6 +65,13 @@
     \definecolor{corFundo}{HTML}{E1E4E5} % Cor de Fundo
     \colorlet{bbe}{corSecundaria}
 }
+\DeclareOption{gestaoPublica}{
+    \definecolor{corPrincipal}{HTML}{064E8B} % Cor Principal
+    \definecolor{corSecundaria}{HTML}{4E98D9} % Cor Secundária
+    \definecolor{corAlternativa}{HTML}{053259} % Cor Alternativa
+    \definecolor{corFundo}{HTML}{E1E4E5} % Cor de Fundo
+    \colorlet{bbe}{corSecundaria}
+}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
 \ExecuteOptions{black}
 \ProcessOptions\relax
