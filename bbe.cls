@@ -166,7 +166,7 @@
 
 
 %\renewcommand*{\partname}{ផ្នែក}
-
+\let\cleardoublepage\clearpage
 % chapter start
 % \RequirePackage{tikz}
 \def\@makechapterhead#1{%
