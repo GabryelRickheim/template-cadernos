@@ -1,5 +1,32 @@
-\chapter{Título Exemplo} % Título por extenso do capitulo
+% Em caso de dúvidas, consulte Gabryel, Suzana ou Vagner.
+% Recomenda-se fortemente a leitura de um dos cadernos prévios para se familiziarizar com os comandos
 
+\chapter{Título Exemplo} % Título por extenso do capitulo
+% Deve-se haver um único comando chapter por módulo, contendo o nome do módulo.
+
+% Ao declarar seções, subseções e subsubseções, lembre-se de adicionar \\ 
+% ao final do texto da seção anterior.
+% ATENÇÃO: Caso o ultimo elemento da seção seja um elemento não textual, 
+% como uma tabela ou imagem ou outro comando latex, utilize \bigskip ao invés de \\
+
+% Os comandos de section se referem as unidades de aprendizagem do módulo. Por sua vez,
+% os comandos de subsection e subsubsection são utilizados para organizar o conteúdo dentro da unidade de
+% aprendizagem.
+
+% Para verificar se você está organizando as unidades de aprendizagem corretamente, consulte o sumário
+% gerado automaticamente no início do documento, e verifique se os numeros das unidades de aprendizagem
+% estão concordantes com o documento RCI/SCORM
+\section{Seção Exemplo 1}
+
+\subsection{Subseção Exemplo 1.1}
+
+\subsubsection{Subsubseção Exemplo 1.1.1}
+
+%
+
+% Exemplos de formatações de texto e elementos
+% Não adicione \\ ao final de cada linha, apenas dê enter
+% para que o texto fique mais organizado
 Texto normal: \\
 
 \textbf{Texto negrito:} \\
@@ -13,27 +40,58 @@ Texto normal: \\
 
 \underline{Texto sublinhado:} \\
 
+\textbf{\underline{Texto negrito e sublinhado:}} \\
+
+%
+
 % Exemplo de caixa personalizada com título
+% Utilize para apresentar APENAS arquivos/links multimídia, como vídeos e podcasts
+% Altere o ícone conforme o tipo de mídia (vídeo, áudio, etc.)
+% A pasta que contém os ícones é a pasta icons
+% O título da caixa deve terminar com reticências (três pontos)
+% Para isso, utilize \ldots
+% Por padrão, o título da caixa é "Assista ao vídeo\ldots" para vídeos e
+% "Ouça o áudio\ldots" para áudios
+
+% A caixa deve conter uma breve descrição do vídeo/áudio, seguido pelo link para o arquivo
+% Geralmente, o texto de descrição é dado pelo documento RCI/SCORM
+% Se não for, adicione uma breve descrição do vídeo/áudio
+% Ex: para o video de apresentação do curso, a descrição seria "Assista ao vídeo de apresentação do curso abaixo"
+
+% Frequentemente, estaremos diagramando o caderno sem acesso ao vídeo ou áudio
+% Nesse caso, mantenha o elemento \href{}{}, mas deixe o link como a palavra "placeholder"
+% E adicione um comentário TODO
+
+%O texto no segundo argumento do \href deve ser sempre "Dê o play agora mesmo!"
 \begin{samepage}
     \begin{flushleft}
         \includegraphics[height=24px]{icons/bullet_video.png}
     \end{flushleft}
     \vspace{-\baselineskip-4px}
-    \begin{titlebox}{Exemplo de caixa com título\ldots}
-        Caixa com título, geralmente usada para apresentação de arquivos multimídia ao leitor, como vídeos, áudios e imagens.
+    \begin{titlebox}{Título da caixa\ldots}
+        Assista ao vídeo abaixo. %descrição
 
-        \href{https://cdn.evg.gov.br/cursos/1332_EVG/videos/Trailer.mp4}{Dê o play agora mesmo!}
+        \href{placeholder}{Dê o play agora mesmo!} %link
     \end{titlebox}
 \end{samepage}
 
+%
+
 % Exemplo de nota destacada
+% Utilize para destacar informações importantes ao leitor
 \begin{note}
     Exemplo de nota, geralmente usada para destacar informações importantes ao leitor. Turibus sedis volo tet faceatin rat voluptat aut quam experiost, cullendi doleseq uaecullandae ea preprae num liquostium fugiae ape reria dit que pe incimi, sunt, omnit re eossentium invelitiis exerchi ligenitiis sitate ad quisseq uaspedi acerupta elique lacid magnis audant estrum quunt quodi comnisint optatibeatem ilit des seni iniscil experit aut eossint, simet pre ped eniati dolla
 \end{note}
 
-\newpage % Cria uma nova página
+%
 
-% exemplo de nota com icone de importante
+% Exemplo de nota com icone
+% Utilize para diagramar boxes como "Importante", "Saiba Mais", "Reflita", etc.
+% Altere o ícone conforme o tipo de box
+% A pasta que contém os ícones é a pasta icons
+% As vezes, o documento pode pedir uma box que não possui um ícone específico
+% Nesse caso, utilize o ícone que mais se aproxima do tema da box
+% Ex: uma box "Reflita" pode utilizar o ícone de "Tome Nota" ou "Pergunta", dependendo do contexto
 \begin{samepage}
     \begin{flushleft}
         \includegraphics[height=24px]{icons/bullet_importante.png}
@@ -44,23 +102,80 @@ Texto normal: \\
     \end{note}
 \end{samepage}
 
+% É também possível que não hája um ícone que se aproxime do tema da box
+% Como é o caso da box "Praticando"
+% Nesse caso, não utilize nenhum ícone, apenas o elemento \begin{note} ... \end{note}
+\begin{note}
+    \textbf{Praticando:}\\
+
+    Exemplo de "Praticando". Turibus sedis volo tet faceatin rat voluptat aut quam experiost, cullendi doleseq uaecullandae ea preprae num liquostium fugiae ape reria dit que pe incimi, sunt, omnit re eossentium invelitiis exerchi ligenitiis sitate ad quisseq uaspedi acerupta elique lacid magnis audant estrum quunt quodi comnisint optatibeatem ilit des seni iniscil experit aut eossint, simet pre ped eniati dolla
+\end{note}
+
+%
+
 % Exemplo de imagem
 % Ao inserir uma imagem, certifique-se que o texto da seção anterior terminou com \\
 % caso o elemento anterior seja algo não textual, como uma tabela ou imagem, utilize \bigskip ao invés de \\
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/exemplo.png}
-    \caption{Figura de Exemplo}
+    \includegraphics[width=0.8\textwidth]{images/exemplo.png} % caminho da imagem
+    %width=0.8\textwidth ajusta a largura da imagem. Por padrão, a largura é 0.8\textwidth
+    \caption{Figura de Exemplo} % legenda da imagem
     %\label{fig:exemplo2}
 \end{figure}
 
-Lista ordenada:
+%
+
+% Exemplo de citação
+% Utilize para diagramar citações de autores, trechos de livros, etc.
+\begin{quotebox}
+    Exemplo de citação. Pis es ex et unt quis ma qui cusa dolorpor molorenducid que vent litiuntiis rem faceaque numquat ionsequo moluptas alicat opta quodi rest ea ditibus anienet, sitatur assum apiciat isciaepelit in et, non con eum et.
+\end{quotebox}
+
+%
+
+% Exemplo de lei
+% Utilize para diagramar artigos de leis, decretos, portarias, etc.
+% importante, incluir vspace
+\vspace{12px}
+\begin{lawbox}
+    Art. 1º Erum veliqui corepud issinct atiaecat reiusam ipisciistiis sequam ius most, experum fugiti veni utem qui deni inum et laccatur repelis acerci iustem ant pore, volecto tatius, alignih illanitat hit et re nossuntiatur atem si dolor rerchil molore qui re, si occaborecus verae.
+\end{lawbox}
+
+%
+
+% Exemplo de tabela
+% Recomenda-se o uso da ferramenta https://www.tablesgenerator.com/ para gerar tabelas em LaTeX
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|p{5cm}|p{10cm}|}
+        \hline
+        \rowcolor[HTML]{E1E4E5}
+        \textbf{Nº} & \textbf{Termo}              & \textbf{Definição / Significado}                                                                                                               \\ \hline
+        1           & empresa estatal             & entidade dotada de personalidade jurídica de direito privado, cuja maioria do capital votante pertença direta ou indiretamente à União.        \\ \hline
+        2           & empresa pública             & empresa estatal cuja maioria do capital votante pertença diretamente à União e cujo capital social seja constituído de recursos públicos.      \\ \hline
+        3           & sociedade de economia mista & empresa estatal cuja maioria das ações com direito a voto pertença diretamente à União e cujo capital social admite participação privada.      \\ \hline
+        4           & subsidiária                 & empresa estatal cuja maioria das ações com direito a voto pertença direta ou indiretamente a empresa pública ou a sociedade de economia mista. \\ \hline
+    \end{tabular}
+    \caption{Glossário de termos} % legenda da tabela
+    %\label{tab:glossario}
+\end{table}
+\bigskip %usar apenas quando for o ultimo elemento da seção
+
+%
+
+% Exemplos de listas
+% Ezistem dois tipos de listas: ordenada, não ordenada
+% Também é possível criar listas aninhadas, ou seja, listas dentro de listas
 
 % Exemplo de lista ordenada
+% Utiliza numeros para cada item
+% Pode ser alterada para letras ou outros símbolos
+% Ordena os itens da lista, enumerando eles
 \begin{enumerate}
     \item Item 1
     \item Item 2
-          \begin{enumerate}
+          \begin{enumerate} % Ao iniciar uma lista dentro de outra lista, ela se torna aninhada
               \item Item 1
               \item Item 2
               \item Item 3
@@ -68,28 +183,13 @@ Lista ordenada:
     \item Item 3
 \end{enumerate}
 
-Lista não ordenada:
-
 % Exemplo de lista não ordenada
+% Utiliza marcadores (bolinhas) para cada item
+% Não ordena os itens da lista, apenas os separa
 \begin{itemize}
     \item Item 1
     \item Item 2
-    \item Item 3
-    \item Item 1
-    \item Item 2
-    \item Item 3
-    \item Item 1
-    \item Item 2
-    \item Item 3
-\end{itemize}
-
-Lista aninhada:
-
-% Exemplo de lista aninhada
-\begin{itemize}
-    \item Item 1
-    \item Item 2
-          \begin{itemize}
+          \begin{itemize} % Ao iniciar uma lista dentro de outra lista, ela se torna aninhada
               \item Subitem 1
               \item Subitem 2
                     \begin{itemize}
@@ -103,58 +203,3 @@ Lista aninhada:
           \end{itemize}
     \item Item 3
 \end{itemize}
-
-% Exemplo de citação
-\begin{quotebox}
-    Exemplo de citação. Pis es ex et unt quis ma qui cusa dolorpor molorenducid que vent litiuntiis rem faceaque numquat ionsequo moluptas alicat opta quodi rest ea ditibus anienet, sitatur assum apiciat isciaepelit in et, non con eum et.
-\end{quotebox}
-
-% Exemplo de lei
-% importante, incluir vspace
-\vspace{12px}
-\begin{lawbox}
-    Art. 1º Erum veliqui corepud issinct atiaecat reiusam ipisciistiis sequam ius most, experum fugiti veni utem qui deni inum et laccatur repelis acerci iustem ant pore, volecto tatius, alignih illanitat hit et re nossuntiatur atem si dolor rerchil molore qui re, si occaborecus verae.
-\end{lawbox}
-
-Exemplo de tabela:
-
-% Exemplo de tabela
-\begin{table}[H]
-    \centering
-    \begin{tabular}{|c|p{5cm}|p{10cm}|}
-        \hline
-        \rowcolor[HTML]{E1E4E5}
-        \textbf{Nº} & \textbf{Termo}              & \textbf{Definição / Significado}                                                                                                               \\ \hline
-        1           & empresa estatal             & entidade dotada de personalidade jurídica de direito privado, cuja maioria do capital votante pertença direta ou indiretamente à União.        \\ \hline
-        2           & empresa pública             & empresa estatal cuja maioria do capital votante pertença diretamente à União e cujo capital social seja constituído de recursos públicos.      \\ \hline
-        3           & sociedade de economia mista & empresa estatal cuja maioria das ações com direito a voto pertença diretamente à União e cujo capital social admite participação privada.      \\ \hline
-        4           & subsidiária                 & empresa estatal cuja maioria das ações com direito a voto pertença direta ou indiretamente a empresa pública ou a sociedade de economia mista. \\ \hline
-    \end{tabular}
-    \caption{Glossário de termos}
-    %\label{tab:glossario}
-\end{table}
-\bigskip %usar apenas quando for o ultimo elemento da seção
-
-% Ao declarar seções, subseções e subsubseções, lembre-se de adicionar \\ 
-% ao final do texto da seção anterior
-% ATENÇÃO: Caso o ultimo elemento da seção seja um elemento não textual, 
-% como uma tabela ou imagem ou outro comando latex, utilize \bigskip ao invés de \\
-\section{Seção Exemplo 1}
-
-Exemplo de seção. \\
-
-\subsection{Subseção Exemplo 1}
-
-Exemplo de subseção. \\
-
-\subsection{Subseção Exemplo 2}
-
-Exemplo de subseção. \\
-
-\subsubsection{Subsubseção Exemplo 1}
-
-Exemplo de subsubseção. \\
-
-\section{Seção Exemplo 2}
-
-Exemplo de seção.

@@ -72,6 +72,13 @@
     \definecolor{corFundo}{HTML}{E1E4E5} % Cor de Fundo
     \colorlet{bbe}{corSecundaria}
 }
+\DeclareOption{gestaoPessoas}{
+    \definecolor{corPrincipal}{HTML}{FABD17} % Cor Principal
+    \definecolor{corSecundaria}{HTML}{C79610} % Cor Secundária
+    \definecolor{corAlternativa}{HTML}{0027AD} % Cor Alternativa
+    \definecolor{corFundo}{HTML}{E1E4E5} % Cor de Fundo
+    \colorlet{bbe}{corSecundaria}
+}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
 \ExecuteOptions{black}
 \ProcessOptions\relax
