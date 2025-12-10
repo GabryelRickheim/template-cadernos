@@ -1,10 +1,4 @@
-# cadernos
-
-## Guidelines
-
-Ao converter tabelas, recomenda-se o uso do site https://www.tablesgenerator.com/. Copie a tabela inteira e cole na primeira celula vazia na tabela do site, e então clique em "Generate". Utilize apenas as linhas de conteudo geradas pelo site, pois as linhas de título e inicialização da tabela devem ser tiradas do arquivo "exemplo.tex".
-
-Esses e outros recursos comuns para a diagramação dos cadernos estão exemplificados no arquivo "exemplo.tex"
+# Template para Diagramação de Cadernos Acadêmicos
 
 ## Execução do Projeto (Editor dedicado)
 
